@@ -1,0 +1,2 @@
+# RDI
+Reduction Degradation Index
