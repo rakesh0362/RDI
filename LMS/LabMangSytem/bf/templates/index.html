@@ -1,0 +1,129 @@
+{% if messg%}
+<script>
+	alert('{{messg}}');
+</script>
+{% endif%}
+<!DOCTYPE html>
+
+<html>
+<head>
+	{% load staticfiles%}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>SAIL, ISP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+
+	<link rel="icon" href="{% static 'images/picture2.jpg' %}" type="image/x-icon" />
+	<script type='text/javascript' src='js/mobile.js'></script>
+</head>
+<body>
+	<form action="postsign/" method="post">
+		{% csrf_token %}
+
+		<span style="color: white">Email:</span>
+
+		<input type="email", name="email" value="email@xxx.com">
+
+		<span style="color: white">Password:</span>
+
+		<input type="password", name="pass" value="password">
+
+		<input type="submit"  , value="Sign In">
+	</form>>
+	<div id="header">
+		<h1><a href="index.html">Welcome to Research and Control Laboratory of SAIL, ISP </a></h1>
+		<ul id="navigation">
+			<li class="current">
+				<a href="index.html">RMHP</a>
+				<ul>
+					<li>
+						<a href="">Iron Ore</a>
+					</li>
+					<li>
+						<a href="">LimeStone</a>
+					</li>
+					<li>
+						<a href="">Dolomite</a>
+					</li>
+					<li>
+						<a href="">Quartzite</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Base Mix</a>
+				<ul>
+					<li>
+						<a href="">Base Mix</a>
+					</li>
+
+				</ul>
+			</li>
+			<li>
+				<a href="">Sinter Plant</a>
+				<ul>
+					<li>
+						<a href="">Sinter</a>
+					</li>
+					<li>
+						<a href="">CokeCrushing</a>
+					</li>
+					<li>
+						<a href="">FluxCrushing</a>
+					</li>
+					<li>
+						<a href="">CalcinedLime</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Coke Oven</a>
+			</li>
+			<li>
+				<a href="">Blast Furnace</a>
+				<ul>
+					<li>
+						<a href="">Sinter</a>
+					</li>
+					<li>
+						<a href="">Coke</a>
+					</li>
+					<li>
+						<a href="">CDI</a>
+					</li>
+					<li>
+						<a href="">Hot Metal</a>
+					</li>
+					<li>
+						<a href="">Slag</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">SMS</a>
+			</li>
+			<li>
+				<a href="">Mills</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+
+		<img src="{% static 'images/banner.jpg' %}" alt="" class="figure">
+		<p class="content">The largest Blast Furnace in India was blown-in at SAIL’s IISCO Steel Plant in presence of Shri C. S. Verma, Chairman SAIL, in the midnight of 30th November 2014 here at Burnpur. Named ‘Kalyani’, the state-of-the-art furnace has a useful volume of 4160 cubic meters and has now become the biggest operating blast furnace in the country. Prior to this, the largest Blast Furnace of the country was installed by SAIL at its Rourkela Steel Plant in the year 2013 which has a useful volume of 4060 cubic meters.
+
+The Furnace is equipped with most advanced features such as high top pressure operation coupled with top pressure recovery turbine, twin material bin bell-less top, stove waste heat recovery, pulverized coal injection, cast house fume extraction, etc, to name a few. It incorporates Level II automation and has twin flat cast house with four tap holes. The environment-friendly Furnace would not only ensure minimum emissions and recovery of waste energy to the fullest, it also has a closed-loop cooling system resulting in almost zero water discharge.
+
+“With this, IISCO Steel Plant is firmly on course to regain its glorious past,” said Shri C. S. Verma immediately after the blowing-in. The start-up of this furnace is seen as the culmination of a massive modernization & expansion work in Burnpur for the installation of a state of the art 2.5 million tons per annum steel plant. The other major upstream and downstream units of the new steel plant viz. Coke Oven Battery, Sinter Plant, Basic Oxygen Furnaces, Continuous casters and the Wire Rod Mill have already commenced operations.</p>
+</p>
+	</div>
+	<div id="footer">
+		<div>
+
+		</div>
+
+	</div>
+</body>
+</html>
